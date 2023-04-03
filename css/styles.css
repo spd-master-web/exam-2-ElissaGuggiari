@@ -64,6 +64,10 @@ nav a:hover {
 }
 
 /*-----main-----*/
+.hero {
+  background-color: #333333;
+}
+
 
 .chip {
     display: inline-block;
@@ -77,15 +81,14 @@ nav a:hover {
 }
 
 .chips-container {
-  display: flex;
+    display: flex;
 }
 
 .chip {
-  background-color: #eee;
-  padding: 10px;
-  margin-right: 10px;
+    background-color: #eee;
+    padding: 10px;
+    margin-right: 10px;
 }
-
 
 /*-----button-----*/
 button {
@@ -106,7 +109,7 @@ footer {
     background-color: #fff;
     text-align: center;
     height: 500px;
-    padding: 300px 0 0 0;
+    padding: 300px 0 0;
 }
 
 /*-----text-----*/
@@ -116,9 +119,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
-    font-family: sans-serif;
+h6 {
+    font-family: 'Work Sans', sans-serif;
     font-weight: bold;
 }
 
@@ -142,5 +144,5 @@ h4 {
 
 p {
     font-size: 18px;
-    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
 }
