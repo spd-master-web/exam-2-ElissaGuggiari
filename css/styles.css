@@ -23,30 +23,29 @@ nav {
     padding: 20px;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+/*-----navbar-----*/
 nav {
     background-color: #d6d6d6;
     flex-direction: column;
     height: 100px;
+    position: sticky;
+    top: 74px;
+    z-index: 999;
 }
-
-footer {
-background-image: url("img/background_liquid.png");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 50px 0;
-}
-
-/*-----navbar-----*/
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    height: 100%;
 }
 
 nav li {
@@ -61,26 +60,31 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff6500;
+    color: #ff6500;
 }
-
-
 
 /*-----main-----*/
 
-
-
 .chip {
-  display: inline-block;
-  border: 2px solid #ff6666;
-  border-radius: 20px;
-  background-color: #f5f5f5;
-  color: #333;
-  font-size: 14px;
-  padding: 8px 16px;
-  margin: 8px;
+    display: inline-block;
+    border: 2px solid #ff6666;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 8px;
 }
 
+.chips-container {
+  display: flex;
+}
+
+.chip {
+  background-color: #eee;
+  padding: 10px;
+  margin-right: 10px;
+}
 
 
 /*-----button-----*/
@@ -94,6 +98,16 @@ button {
 }
 
 /*-----footer-----*/
+footer {
+    background-image: url("../img/background_liquid.png");
+    background-size: contain;
+    background-position: center;
+    color: #fff;
+    background-color: #fff;
+    text-align: center;
+    height: 500px;
+    padding: 300px 0 0 0;
+}
 
 /*-----text-----*/
 a,
