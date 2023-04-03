@@ -63,12 +63,27 @@ nav a:hover {
     color: #ff6500;
 }
 
-/*-----main-----*/
+/*-----main - hero-----*/
 .hero {
-  background-color: #333333;
+    background-color: #333333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 100px 300px;
 }
 
+.hero img {
+    flex: 1;
+    max-width: 50%;
+}
 
+.hero-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/*-----main - chips-----*/
 .chip {
     display: inline-block;
     border: 2px solid #ff6666;
@@ -144,5 +159,6 @@ h4 {
 
 p {
     font-size: 18px;
+    line-height: 27px;
     font-family: Arial, Helvetica, sans-serif;
 }
