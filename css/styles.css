@@ -26,7 +26,19 @@ nav {
 header {
     position: fixed;
     width: 100%;
-    z-index: 999;
+    height: 100px;
+    z-index: 99;
+}
+
+@media screen and (max-width: 960px) {
+    header > picture > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* header {
+        height: 300px;
+      } */
 }
 
 /*-----navbar-----*/
@@ -36,7 +48,7 @@ nav {
     height: 100px;
     position: sticky;
     top: 74px;
-    z-index: 999;
+    z-index: 99;
 }
 
 nav ul {
@@ -63,10 +75,20 @@ nav a:hover {
     color: #ff6500;
 }
 
+@media screen and (max-width: 960px) {
+    nav {
+        height: 300px;
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
 /*-----main - hero-----*/
 .hero {
     background-color: #333333;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -74,48 +96,72 @@ nav a:hover {
 }
 
 .hero img {
-    flex: 1;
     max-width: 50%;
 }
 
 .hero-content {
-    flex: 1;
     padding: 0 20px;
+}
+
+.hero-content h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px 50px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
 }
 
 /*-----main - chips-----*/
 .chips-container {
     display: flex;
-    justify-content: center;
-    align-items: space-between;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 300px 0;
-  }
-  
-  .chip {
+    padding: 300px 50px;
+}
+
+.chip {
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: left;
-  }
-  
-  .chip img {
+}
+
+.chip img {
     max-width: 100%;
-  }
-  
-  .chip h3 {
+}
+
+.chip h3 {
     margin-top: 20px;
     margin-bottom: 10px;
-  }
-  
-  .chip p {
+}
+
+.chip p {
     line-height: 1.5;
     margin-bottom: 20px;
-  }
-  
-  
+}
 
+@media screen and (max-width: 960px) {
+    .chips-container {
+        flex-direction: column;
+        padding: 50px;
+        gap: 100px;
+    }
+    .chip {
+        width: 100%;
+    }
+}
 
 /*-----button-----*/
 button {
@@ -130,18 +176,31 @@ button {
 button a {
     text-decoration: none;
     color: #ffffff;
-  }
+}
+
+@media screen and (max-width: 960px) {
+    button {
+        width: 50%;
+    }
+}
 
 /*-----footer-----*/
 footer {
     background-image: url("../img/background_liquid.png");
     background-size: contain;
     background-position: center;
-    color: #fff;
-    background-color: #fff;
+    color: #ffffff;
+    background-color: #ffffff;
     text-align: center;
     height: 500px;
     padding: 300px 0 0;
+}
+
+@media screen and (max-width: 960px) {
+    footer {
+        background-position: bottom;
+        background-size: cover;
+    }
 }
 
 /*-----text-----*/
